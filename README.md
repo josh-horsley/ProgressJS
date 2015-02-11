@@ -1,7 +1,6 @@
 # ProgressJS
 Lightweight javascript library for creating a progress bar
 
-First Tab:
 ```sh
 var progressBar = new ProgressBar('#progress');
 	progressBar.Setup({
