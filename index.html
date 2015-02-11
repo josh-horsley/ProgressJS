@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Scarlet Theme</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="bootstrap.css" />
+		<link rel="stylesheet" href="bootstrap-theme.css" />
+		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="progressBar.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<hr />
+			<div id="progress"></div>
+			<hr />
+		</div>
+		<script>
+			var progressBar = new ProgressBar('#progress');
+			progressBar.Setup({
+				sections: 5,
+				sectionsInfo: [
+					{ label: "Section 1", tip: "Created On 5/29/2014" },
+					{ label: "Section 2", tip: "Section 2 complete" },
+					{ label: "Section 3", tip: "In progress" }
+				]
+			});
+		</script>
+	</body>
+</html>
